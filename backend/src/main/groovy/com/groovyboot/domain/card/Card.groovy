@@ -15,7 +15,7 @@ class Card extends BaseEntity{
 
     @NotNull
     String maskeNumber
-    
+
     @NotNull
     Integer expirationMonth
 
