@@ -2,9 +2,7 @@ import './styles.css';
 
 function FormCard() {
     return (
-        <div>
-
-        </div>
+        <h1>Pagina de formulário</h1>
     );
 }
 
