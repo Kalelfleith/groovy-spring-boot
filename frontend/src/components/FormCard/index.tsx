@@ -7,23 +7,24 @@ function FormCard() {
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Nome</Form.Label>
-                    <Form.Control type="name" placeholder="Enter name" />
+                    <Form.Control type="name" placeholder="Enter name" id="name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="email" placeholder="Enter email" id="email"/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Data de Nascimento</Form.Label>
-                    <Form.Control type="birthDate" placeholder="Enter birthDate" />
+                    <Form.Control type="birthDate" placeholder="Enter birthDate" id="birthDate"/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>CPF</Form.Label>
-                    <Form.Control type="cpf" placeholder="Enter cpf" />
+                    <Form.Control type="cpf" placeholder="Enter cpf" id="cpfCnpj"/>
                 </Form.Group>
+                
                 <div className='button-container'>
                     <Button className='btn' variant="primary" type="submit">
                         Submit
