@@ -11,8 +11,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/form">
-          <Route path=":movieId" element={<Form />} />
+        <Route path="/form" element={<Form />}>
         </Route>
       </Routes>
     </BrowserRouter>
