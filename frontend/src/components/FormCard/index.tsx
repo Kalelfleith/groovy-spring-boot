@@ -17,14 +17,14 @@ function FormCard() {
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Data de Nascimento</Form.Label>
-                    <Form.Control type="birthDate" placeholder="Enter birthDate" id="birthDate"/>
+                    <Form.Control type="date" placeholder="Enter birthDate" id="birthDate"/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>CPF</Form.Label>
                     <Form.Control type="cpf" placeholder="Enter cpf" id="cpfCnpj"/>
                 </Form.Group>
-                
+
                 <div className='button-container'>
                     <Button className='btn' variant="primary" type="submit">
                         Submit
