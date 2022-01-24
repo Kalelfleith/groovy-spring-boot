@@ -1,10 +1,26 @@
+import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import { validateEmail } from 'utils/validate';
 import './styles.css';
 
 function FormCard() {
+
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+
+        event.preventDefault();
+
+        const email = (event.target as any).email.value;
+
+        if (!validateEmail(email)) {
+            return;
+        }
+
+    }
+
+
     return (
         <div className="form-container">
-            <Form>
+            <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Nome</Form.Label>
                     <Form.Control type="name" placeholder="Enter name" id="name" />
