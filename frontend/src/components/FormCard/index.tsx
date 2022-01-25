@@ -1,18 +1,38 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import axios, { AxiosRequestConfig } from 'axios';
 import { Form, Button } from 'react-bootstrap';
+import { BASE_URL } from 'utils/requests';
 import { validateEmail } from 'utils/validate';
 import './styles.css';
 
 function FormCard() {
+
+    const navigate = useNavigate();
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 
         event.preventDefault();
 
         const email = (event.target as any).email.value;
+        const name = (event.target as any).name.value;
+        const date = (event.target as any).birthDate.value;
+        const cpf = (event.target as any).cpfCnpj.value;
 
         if (!validateEmail(email)) {
             return;
+        }
+
+        const config: AxiosRequestConfig = {
+            baseURL: BASE_URL,
+            method: 'PUT',
+            url: '/scores',
+            data: {
+                email: email,
+                name: name,
+                birthDate: date,
+                cpfCnpj: cpf
+            }
         }
 
     }
