@@ -9,3 +9,9 @@ Repository dedicated to developing an application in Groovy and Spring Boot
 
 ### Frontend
 > ReactJS
+
+### Diff Groovy x JAVA
+
+- Declaração de veriáveis (Groovy usa <strong>def</strong>)
+- Tipagem (Java usa tipos primitivos)
+- <strong>Closures</strong>
